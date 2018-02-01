@@ -32,6 +32,9 @@ The goal of packages-report is to FINISH THIS SENTENCE.
 
 ```{r, include = FALSE}
 ## load data/add-on-packages-freqtable.csv here in this chunk
+library(here)
+apt_freqtable <- read.csv(here("data","add-on-packages-freqtable.csv"))
+
 ```
 
 I have `FILL THIS IN!!!` add-on packages installed.
@@ -41,6 +44,12 @@ Here's how they break down in terms of which version of R they were built under,
 ```{r, echo = FALSE}
 ## print the frequency table here
 ## make it prettier if you know how
+# library(DT)
+
+# datatable(apt_freqtable[,2:4]) # *doesn't work in non html
+
+print(apt_freqtable[,2:4])
+
 ```
 
 ![](figs/built-barchart.png)

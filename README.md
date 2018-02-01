@@ -25,6 +25,11 @@ I have `FILL THIS IN!!!` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
+    #>   Built  n prop
+    #> 1 3.4.1  0    0
+    #> 2 3.4.2  0    0
+    #> 3 3.4.3 30    1
+
 ![](figs/built-barchart.png)
 
 ### Flow of the analysis
